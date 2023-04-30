@@ -51,8 +51,27 @@ To generate a GIF with falling cross, line, and circle shapes in red, green, and
 
 ```
 scssCopy code
-python falling_shapes.py --shapes cross 2 FF0000 line 9 00FF00 circle 3 0000FF --direction zigzag --width 1024 --height 1024 --num_dots 150 --min_size 2 --max_size 10 --duration 150 --height_range 512 --num_frames 200
+python falling_shapes.py --shapes dot 11 star 3 --direction zigzag --color ff00ff --width 1024 --height 1024 --num_dots 150 --min_size 2 --max_size 10 --duration 150 --height_range 512 --num_frames 200
 ```
+<img src="https://github.com/LinkTTT/Falling-Shapes-Generator/blob/main/falling_shapes_zigzag.gif" alt="example image" width="300" height="300"/>
+
+```
+scssCopy code
+python falling_shapes.py --shapes line 11 cross 3 --color 0000FF
+```
+<img src="https://github.com/LinkTTT/Falling-Shapes-Generator/blob/main/falling_shapes_down.gif" alt="example image" width="300" height="300"/>
+
+```
+scssCopy code
+python falling_shapes.py --shapes cross 2 FF0000 dot 11 00FF00 star 3 0000FF --direction left --width 1024 --height 1024 --num_dots 150 --min_size 2 --max_size 10 --duration 150 --height_range 512 --num_frames 200
+```
+<img src="https://github.com/LinkTTT/Falling-Shapes-Generator/blob/main/falling_shapes_left.gif" alt="example image" width="300" height="300"/>
+
+```
+scssCopy code
+python falling_shapes.py --shapes cross 2 FF0000 line 9 00FF00 circle 3 0000FF --direction right --width 1024 --height 1024 --num_dots 150 --min_size 2 --max_size 10 --duration 150 --height_range 512 --num_frames 200
+```
+<img src="https://github.com/LinkTTT/Falling-Shapes-Generator/blob/main/falling_shapes_right.gif" alt="example image" width="300" height="300"/>
 
 This will create a GIF named "falling_shapes_zigzag.gif" in the current working directory.
 
